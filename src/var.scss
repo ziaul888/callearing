@@ -1,0 +1,20 @@
+// color
+
+$white: #fff;
+$black: #000;
+$black2: #292929;
+$green: #4dec8c;
+$primary: #4dec8c;
+$secondary: #404040;
+$gray: #f4f4f4;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1180px,
+) !default;

@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
+import "./App.scss";
+import NavBar from "./layout/NavBar";
+import Hero from "./layout/Hero";
+import { Route, Routes } from "react-router-dom";
+import TopBar from "./layout/TopBar";
+import Footer from "./layout/Footer";
+import { BrowserRouter } from "react-router-dom";
+import DailyCalender from "./pages/DailyCalender";
+import WeeklyCalender from "./pages/WeeklyCalender";
+import MonthlyCanlender from "./pages/MonthlyCalender";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <main>
+          <Hero />
+          <section className="calender-section">
+            <div className="container">
+              <TopBar />
+              <Routes>
+                <Route path="/" element={<DailyCalender />} />
+                <Route path="/weeklycalender" element={<WeeklyCalender />} />
+                <Route path="/monthlycalender" element={<MonthlyCanlender />} />
+              </Routes>
+            </div>
+          </section>
+        </main>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
