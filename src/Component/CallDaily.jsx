@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../data";
-
+import useCollapse from "react-collapsed";
 
 const CallDaily = (props) => {
   return (
     <>
       {data.map((item, index) => {
         if (item?.id === props.items) {
-          return item.callList?.map((time) => {
+          return item.callList?.map((time, index) => {
             return (
               <div className="card" key={time.id}>
                 <div className="card-body">
@@ -17,9 +17,10 @@ const CallDaily = (props) => {
                       <span className="count">{time.call} Calls</span>
                     </h5>
                   </div>
-                  <div className="call-card-block">
+
+                  <div className="call-card-block ">
                     <div className="call-list">
-                      {time.calls.map((tempCall) => {
+                      {time.calls.map((tempCall, index) => {
                         return (
                           <div className="call-card" key={tempCall.id}>
                             <div className="text">{tempCall.title}</div>
@@ -32,11 +33,53 @@ const CallDaily = (props) => {
                         );
                       })}
                     </div>
+                    {time.calls.length === 5 && (
+                      <div className="collapse" id="collapseExample">
+                        <div className="call-list">
+                          <div className="call-card">
+                            <div className="text">lululemon athletica inc.</div>
+
+                            <div className="info">
+                              <span className="qno">Q3</span>
+                              <span className="qyear">2020</span>
+                            </div>
+                          </div>
+
+                          <div className="call-card">
+                            <div className="text">lululemon athletica inc.</div>
+
+                            <div className="info">
+                              <span className="qno">Q3</span>
+                              <span className="qyear">2020</span>
+                            </div>
+                          </div>
+
+                          <div className="call-card">
+                            <div className="text">lululemon athletica inc.</div>
+
+                            <div className="info">
+                              <span className="qno">Q3</span>
+                              <span className="qyear">2020</span>
+                            </div>
+                          </div>
+
+                          <div className="call-card">
+                            <div className="text">lululemon athletica inc.</div>
+
+                            <div className="info">
+                              <span className="qno">Q3</span>
+                              <span className="qyear">2020</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  {item.callList.length > 4 ? (
-                    <div class="more-call">
+
+                  {time.calls.length === 5 && (
+                    <div className="more-call">
                       <button
-                        class="btn py-2 px-1 without-focus"
+                        className="btn py-2 px-1 without-focus"
                         type="button"
                         data-toggle="collapse"
                         data-target="#collapseExample"
@@ -61,8 +104,6 @@ const CallDaily = (props) => {
                         </svg>
                       </button>
                     </div>
-                  ) : (
-                    ""
                   )}
                 </div>
               </div>

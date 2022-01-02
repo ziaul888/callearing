@@ -2,12 +2,13 @@ const data = [
   {
     id: 1,
     date: 29,
-    month:"Dec",
+    month: "Dec",
     weekDay: "tue",
     totalcall: 10,
 
     callList: [
       {
+        id: 1,
         hour: 8.0,
         call: 4,
         calls: [
@@ -34,6 +35,7 @@ const data = [
         ],
       },
       {
+        id: 2,
         hour: 9.0,
         calls: [
           {
@@ -64,6 +66,7 @@ const data = [
         ],
       },
       {
+        id: 3,
         hour: 10.0,
         calls: [
           {
@@ -103,12 +106,13 @@ const data = [
   {
     id: 2,
     date: 30,
-    month:"Dec",
+    month: "Dec",
     weekDay: "wed",
     totalcall: 10,
 
     callList: [
       {
+        id: 213,
         hour: 8.0,
         call: 3,
         calls: [
@@ -130,6 +134,7 @@ const data = [
         ],
       },
       {
+        id: 134,
         hour: 9.0,
         calls: [
           {
@@ -159,7 +164,7 @@ const data = [
   {
     id: 3,
     date: 31,
-    month:"Dec",
+    month: "Dec",
     weekDay: "Fri",
     totalcall: 20,
 
@@ -181,6 +186,21 @@ const data = [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
             quater: "Q3",
+            year: 2020,
+          },
+          {
+            title: "Lorem amet adipisicing elit",
+            quater: "Q4",
+            year: 2020,
+          },
+          {
+            title: "Lorem amet adipisicing elit",
+            quater: "Q4",
+            year: 2020,
+          },
+          {
+            title: "Lorem amet adipisicing elit",
+            quater: "Q4",
             year: 2020,
           },
           {
@@ -225,10 +245,10 @@ const data = [
   {
     id: 4,
     date: 1,
-    month:"Jan",
+    month: "Jan",
     weekDay: "Sat",
     totalcall: 20,
-    link: "/",
+
     callList: [
       {
         hour: 8.0,
@@ -341,10 +361,10 @@ const data = [
   {
     id: 5,
     date: 2,
-    month:"Jan",
+    month: "Jan",
     weekDay: "Sun",
     totalcall: 20,
-    link: "/calldaily2",
+
     callList: [
       {
         hour: 8.0,
@@ -407,7 +427,7 @@ const data = [
   {
     id: 6,
     date: 3,
-    month:"Jan",
+    month: "Jan",
     weekDay: "Mon",
     totalcall: 20,
     link: "/calldaily3",
@@ -492,7 +512,7 @@ const data = [
   },
   {
     id: 7,
-    month:"Jan",
+    month: "Jan",
     date: 4,
     weekDay: "Tu",
     totalcall: 20,
@@ -546,21 +566,6 @@ const data = [
             quater: "Q4",
             year: 2020,
           },
-          {
-            title: "Lorem amet adipisicing elit",
-            quater: "Q4",
-            year: 2020,
-          },
-          {
-            title: "Lorem amet adipisicing elit",
-            quater: "Q4",
-            year: 2020,
-          },
-          {
-            title: "Lorem amet adipisicing elit",
-            quater: "Q4",
-            year: 2020,
-          },
         ],
       },
       {
@@ -593,11 +598,6 @@ const data = [
         hour: 8.0,
         call: 9,
         calls: [
-          {
-            title: "Lorem ipsum dolor sit amet consectetur",
-            quater: "Q3",
-            year: 2020,
-          },
           {
             title: "Lorem amet adipisicing elit",
             quater: "Q4",
@@ -630,7 +630,7 @@ const data = [
   {
     id: 8,
     date: 5,
-    month:"Jan",
+    month: "Jan",
     weekDay: "Wed",
     totalcall: 20,
     callList: [
@@ -691,7 +691,7 @@ const data = [
     id: 9,
     date: 6,
     weekDay: "tha",
-    month:"Jan",
+    month: "Jan",
     totalcall: 20,
     callList: [
       {
@@ -750,7 +750,7 @@ const data = [
   {
     id: 10,
     date: 7,
-    month:"Jan",
+    month: "Jan",
     weekDay: "Fri",
     totalcall: 20,
     callList: [
@@ -807,7 +807,7 @@ const data = [
   {
     id: 11,
     date: 8,
-    month:"Jan",
+    month: "Jan",
     weekDay: "Sat",
     totalcall: 20,
   },

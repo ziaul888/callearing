@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Tippy from "@tippyjs/react";
 //import "tippy.js/dist/tippy.css";
 
-import Demo from "./Demo";
+//import Demo from "./Demo";
+import DemoDay1 from "./DemoDay1";
 
 const CallMonthly = () => {
   const [visible, setVisible] = useState(false);
@@ -34,12 +35,12 @@ const CallMonthly = () => {
                   <span className="lbl">5 Calls</span>
                   <Tippy
                     arrow={true}
-                    visible={visible}
+                    // visible={visible}
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
                     placement="top"
-                    content={<Demo></Demo>}
+                    content={<DemoDay1></DemoDay1>}
                   >
                     <span>
                       <button
