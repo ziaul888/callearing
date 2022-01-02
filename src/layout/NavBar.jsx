@@ -35,7 +35,7 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarsLG">
           <ul className="navbar-nav align-items-lg-center ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/calender.html">
+              <a className="nav-link" href="/">
                 Earning Calender
               </a>
             </li>

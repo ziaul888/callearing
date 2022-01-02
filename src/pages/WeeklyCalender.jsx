@@ -2,8 +2,9 @@ import React, { useEffect,useState } from "react";
 import CallWeekly from "../Component/CallWeekly";
 //import WeeklySilder from "../Component/WeeklySilder";
 import Slider from "../layout/Slider";
+import data from "../data"
 
-const data = [
+const data1 = [
   {
     id: 1,
     date: "",

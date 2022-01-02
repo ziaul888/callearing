@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import data from "../data";
-import useCollapse from "react-collapsed";
+
 
 const CallDaily = (props) => {
   return (
@@ -8,6 +8,7 @@ const CallDaily = (props) => {
       {data.map((item, index) => {
         if (item?.id === props.items) {
           return item.callList?.map((time, index) => {
+            console.log(time.hour);
             return (
               <div className="card" key={time.id}>
                 <div className="card-body">
@@ -76,7 +77,7 @@ const CallDaily = (props) => {
                     )}
                   </div>
 
-                  {time.calls.length === 5 && (
+                  {time.calls.length >= 5 && (
                     <div className="more-call">
                       <button
                         className="btn py-2 px-1 without-focus"
@@ -97,9 +98,9 @@ const CallDaily = (props) => {
                             transform="translate(4141.833 440.664) rotate(90)"
                             fill="none"
                             stroke="#000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="3"
+                            strokelinecap="round"
+                            strokelinejoin="round"
+                            strokeWidth="3"
                           ></path>
                         </svg>
                       </button>

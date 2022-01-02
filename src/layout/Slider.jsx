@@ -75,9 +75,9 @@ function Silder(props) {
             transform="translate(439.958 -4121.812)"
             fill="none"
             stroke="#4dec8c"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokelinecap="round"
+            strokelinejoin="round"
+            strokewidth="2"
           ></path>
         </svg>
       </div>

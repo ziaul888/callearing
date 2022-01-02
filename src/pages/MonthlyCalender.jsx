@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import CallMonthly from "../Component/CallMonthly";
 import Slider from "../layout/Slider";
 
@@ -8,29 +8,29 @@ const MonthlyCanlender = () => {
       id: 1,
       date: "2021",
       day: "",
-      call: "1000",
-      text:"November"
+      totalcall: 1000,
+      month: "November",
     },
     {
       id: 1,
       date: "2021",
       day: "",
-      call: "1000",
-      text:"November"
+      totalcall:234,
+      month: "December",
     },
     {
       id: 1,
       date: "2021",
       day: "",
-      call: "1000",
-      text:"November"
+      totalcall:400,
+      month: "January",
     },
     {
       id: 1,
       date: "2021",
       day: "",
-      call: "1000",
-      text:"November"
+      totalcall: 789,
+      month: "February",
     },
   ];
   useEffect(() => {

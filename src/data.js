@@ -9,7 +9,7 @@ const data = [
     callList: [
       {
         id: 1,
-        hour: 8.0,
+        hour: 8.00,
         call: 4,
         calls: [
           {
@@ -36,7 +36,7 @@ const data = [
       },
       {
         id: 2,
-        hour: 9.0,
+        hour: "9.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -67,7 +67,7 @@ const data = [
       },
       {
         id: 3,
-        hour: 10.0,
+        hour: "10.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -113,7 +113,7 @@ const data = [
     callList: [
       {
         id: 213,
-        hour: 8.0,
+        hour: 8.00,
         call: 3,
         calls: [
           {
@@ -135,7 +135,7 @@ const data = [
       },
       {
         id: 134,
-        hour: 9.0,
+        hour: 9.00,
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -170,7 +170,7 @@ const data = [
 
     callList: [
       {
-        hour: 8.0,
+        hour: 8.00,
         call: 5,
         calls: [
           {
@@ -211,7 +211,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: 9.00,
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -251,7 +251,7 @@ const data = [
 
     callList: [
       {
-        hour: 8.0,
+        hour: "8.00",
         call: 5,
         calls: [
           {
@@ -282,7 +282,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "9.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -307,7 +307,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "10.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -332,7 +332,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour:"11.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -367,7 +367,7 @@ const data = [
 
     callList: [
       {
-        hour: 8.0,
+        hour: "8.00",
         call: 6,
         calls: [
           {
@@ -393,7 +393,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "9.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -433,7 +433,7 @@ const data = [
     link: "/calldaily3",
     callList: [
       {
-        hour: 8.0,
+        hour: "8.00",
         call: 4,
         calls: [
           {
@@ -459,7 +459,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "9.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -484,7 +484,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "10.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -518,7 +518,7 @@ const data = [
     totalcall: 20,
     callList: [
       {
-        hour: 8.0,
+        hour: "8.00",
         call: 9,
         calls: [
           {
@@ -544,7 +544,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "9.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -569,7 +569,7 @@ const data = [
         ],
       },
       {
-        hour: 8.0,
+        hour: "10.00",
         call: 9,
         calls: [
           {
@@ -595,7 +595,7 @@ const data = [
         ],
       },
       {
-        hour: 8.0,
+        hour: "11.00",
         call: 9,
         calls: [
           {
@@ -635,7 +635,7 @@ const data = [
     totalcall: 20,
     callList: [
       {
-        hour: 8.0,
+        hour: "8.00",
         call: 7,
         calls: [
           {
@@ -661,7 +661,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "9.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -695,7 +695,7 @@ const data = [
     totalcall: 20,
     callList: [
       {
-        hour: 8.0,
+        hour: "8.00",
         call: 5,
         calls: [
           {
@@ -721,7 +721,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "9.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
@@ -755,7 +755,7 @@ const data = [
     totalcall: 20,
     callList: [
       {
-        hour: 8.0,
+        hour: "8.00",
         call: 4,
         calls: [
           {
@@ -781,7 +781,7 @@ const data = [
         ],
       },
       {
-        hour: 9.0,
+        hour: "9.00",
         calls: [
           {
             title: "Lorem ipsum dolor sit amet consectetur",
