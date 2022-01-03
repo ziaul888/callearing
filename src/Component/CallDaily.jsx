@@ -1,14 +1,23 @@
 import React, { useState } from "react";
 import data from "../data";
 
-
 const CallDaily = (props) => {
+  // const [toggle, setToggle] = useState(false);
+  // const [visile, setVisible] = useState(5);
+
+  // const handleToggle = () => {
+  //   setToggle((prevTog) => !prevTog);
+  //   console.log(toggle);
+  // };
+  // const showMoreCall = () => {
+  //   setVisible((prevValue) => prevValue + 5);
+  // };
+
   return (
     <>
-      {data.map((item, index) => {
+      {data.map((item) => {
         if (item?.id === props.items) {
           return item.callList?.map((time, index) => {
-            console.log(time.hour);
             return (
               <div className="card" key={time.id}>
                 <div className="card-body">
@@ -18,10 +27,9 @@ const CallDaily = (props) => {
                       <span className="count">{time.call} Calls</span>
                     </h5>
                   </div>
-
                   <div className="call-card-block ">
                     <div className="call-list">
-                      {time.calls.map((tempCall, index) => {
+                      {time.calls.slice(0, 5).map((tempCall) => {
                         return (
                           <div className="call-card" key={tempCall.id}>
                             <div className="text">{tempCall.title}</div>
@@ -34,56 +42,33 @@ const CallDaily = (props) => {
                         );
                       })}
                     </div>
-                    {time.calls.length === 5 && (
-                      <div className="collapse" id="collapseExample">
+                    {time.calls && time.calls.length > 5 ? (
+                      <div className="collapse" id={`collapseExample${index}`}>
                         <div className="call-list">
-                          <div className="call-card">
-                            <div className="text">lululemon athletica inc.</div>
-
-                            <div className="info">
-                              <span className="qno">Q3</span>
-                              <span className="qyear">2020</span>
-                            </div>
-                          </div>
-
-                          <div className="call-card">
-                            <div className="text">lululemon athletica inc.</div>
-
-                            <div className="info">
-                              <span className="qno">Q3</span>
-                              <span className="qyear">2020</span>
-                            </div>
-                          </div>
-
-                          <div className="call-card">
-                            <div className="text">lululemon athletica inc.</div>
-
-                            <div className="info">
-                              <span className="qno">Q3</span>
-                              <span className="qyear">2020</span>
-                            </div>
-                          </div>
-
-                          <div className="call-card">
-                            <div className="text">lululemon athletica inc.</div>
-
-                            <div className="info">
-                              <span className="qno">Q3</span>
-                              <span className="qyear">2020</span>
-                            </div>
-                          </div>
+                          {time.calls.slice(5).map((item, index1) => {
+                            return (
+                              <div className="call-card" key={index1}>
+                                <div className="text">{item.title}</div>​
+                                <div className="info">
+                                  <span className="qno">{item.quater}</span>
+                                  <span className="qyear">{item.year}</span>
+                                </div>
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
+                    ) : (
+                      ""
                     )}
                   </div>
-
-                  {time.calls.length >= 5 && (
+                  {time.calls.length > 5 && (
                     <div className="more-call">
                       <button
                         className="btn py-2 px-1 without-focus"
                         type="button"
                         data-toggle="collapse"
-                        data-target="#collapseExample"
+                        data-target={`#collapseExample${index}`}
                         aria-expanded="false"
                         aria-controls="collapseExample"
                       >
@@ -98,9 +83,9 @@ const CallDaily = (props) => {
                             transform="translate(4141.833 440.664) rotate(90)"
                             fill="none"
                             stroke="#000"
-                            strokelinecap="round"
-                            strokelinejoin="round"
-                            strokeWidth="3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="3"
                           ></path>
                         </svg>
                       </button>
@@ -112,36 +97,6 @@ const CallDaily = (props) => {
           });
         }
       })}
-      {/* <div className="call-card-block">
-            <div className="call-list">
-              <div className="call-card">
-                <div className="text">lululemon athletica inc.</div>
-
-                <div className="info">
-                  <span className="qno">Q3</span>
-                  <span className="qyear">2020</span>
-                </div>
-              </div>
-
-              <div className="call-card">
-                <div className="text">lululemon athletica inc.</div>
-
-                <div className="info">
-                  <span className="qno">Q3</span>
-                  <span className="qyear">2020</span>
-                </div>
-              </div>
-
-              <div className="call-card">
-                <div className="text">lululemon athletica inc.</div>
-
-                <div className="info">
-                  <span className="qno">Q3</span>
-                  <span className="qyear">2020</span>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
       <div className="more-call"></div>
     </>

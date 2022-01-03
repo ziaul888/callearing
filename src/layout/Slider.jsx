@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/css/navigation";
@@ -7,6 +7,7 @@ import "swiper/css";
 SwiperCore.use([Navigation]);
 
 function Silder(props) {
+  // const [swiper, setSwiper] = useState();
   const getCurrentItem = (index) => {
     props.filterCall(props.data[index].id);
   };
@@ -33,6 +34,8 @@ function Silder(props) {
       </div>
       <Swiper
         className={`swiper ${props.daily}`}
+        pagination={{ clickable: true }}
+        // onSwiper={(swiper) => setSwiper(swiper)}
         slidesPerView={props.slidesPerView}
         centeredSlides={true}
         centeredSlidesBounds={true}
