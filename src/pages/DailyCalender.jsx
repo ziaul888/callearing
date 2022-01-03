@@ -25,7 +25,6 @@ const DailyCalender = () => {
         daily2=""
         filterCall={filterCall}
         items={item}
-        setItem={setItem}
       />
       <CallDaily items={item} />
     </>

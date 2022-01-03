@@ -8,11 +8,9 @@ SwiperCore.use([Navigation, A11y, Pagination]);
 
 function Silder(props) {
   // const [swiper, setSwiper] = useState();
-  const filterCall = (id) => {
-    props.setItem(id);
-  };
+  
   const getCurrentItem = (index) => {
-    filterCall(props.data[index].id);
+    props.filterCall(props.data[index].id);
   };
 
   return (
