@@ -8,16 +8,16 @@ const Footer = () => {
             <div className="col-12">
               <div className="list-group bottom-nav">
                 <li className="list-group-item">
-                  <a href="">Earning Calender</a>
+                  <a href="/">Earning Calender</a>
                 </li>
                 <li className="list-group-item">
-                  <a href="">About</a>
+                  <a href="/">About</a>
                 </li>
                 <li className="list-group-item">
-                  <a href="">Terms of Use</a>
+                  <a href="/">Terms of Use</a>
                 </li>
                 <li className="list-group-item">
-                  <a href="">Privacy Policy</a>
+                  <a href="/">Privacy Policy</a>
                 </li>
               </div>
             </div>
