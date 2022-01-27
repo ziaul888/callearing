@@ -12,6 +12,11 @@ const DailyCalender = () => {
     setItem(id);
   };
   useEffect(() => {
+    //console.log(localStorage.getItem("currentIndex"));
+
+    if (window.innerWidth <= 768) {
+      filterCall(1);
+    }
     window.scrollTo({ top: 0 });
   }, []);
   return (
@@ -27,7 +32,7 @@ const DailyCalender = () => {
         filterCall={filterCall}
         items={item}
       />
-      <CallDaily items={item} />
+      <CallDaily items={item} filterCall={filterCall} />
     </>
   );
 };

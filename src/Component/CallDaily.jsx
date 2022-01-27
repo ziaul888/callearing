@@ -12,12 +12,15 @@ const CallDaily = (props) => {
     desktop: 1000,
     largeDesktop: 1600,
   });
+  
   const callShow = screenType.isMobile ? 2 : 5;
 
   return (
     <>
       {data.map((item) => {
+        
         if (item?.id === props.items) {
+         
           return item.callList?.map((time, index) => {
             return (
               <div className="card daily" key={time.id}>
