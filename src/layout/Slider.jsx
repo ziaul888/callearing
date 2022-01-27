@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, A11y, Pagination } from "swiper";
 import "swiper/css/navigation";
@@ -8,7 +8,7 @@ SwiperCore.use([Navigation, A11y, Pagination]);
 
 function Silder(props) {
   // const [swiper, setSwiper] = useState();
-  
+
   const getCurrentItem = (index) => {
     props.filterCall(props.data[index].id);
   };
@@ -35,12 +35,17 @@ function Silder(props) {
       </div>
       <Swiper
         className={`swiper ${props.daily}`}
-        slidesPerView={props.slidesPerView}
+        slidesPerView={props.slidesPerViewM}
         slideToClickedSlide={true}
         centeredSlides={true}
         centeredSlidesBounds={true}
         slidesPerGroup={props.slidesPerGroup}
         onSlideChange={(item) => getCurrentItem(item.activeIndex)}
+        breakpoints={{
+          768: {
+            slidesPerView: props.slidesPerViews,
+          },
+        }}
         navigation={{
           nextEl: ".swipe-next",
           prevEl: ".swipe-prev",
@@ -53,7 +58,7 @@ function Silder(props) {
               <SwiperSlide className="swiper-slide" key={slide.id}>
                 <div
                   className={`date-block ${props.daily1}`}
-                  onClick={() => props.filterCall(slide.id)}
+                  // onClick={() => props.filterCall(slide.id)}
                 >
                   <div className={`date ${props.daily2}`}>
                     {slide.date} {slide.month} <span>{slide.weekDay}</span>

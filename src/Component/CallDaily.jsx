@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import data from "../data";
+import useScreenType from "react-screentype-hook";
+
+import { Link } from "react-router-dom";
 
 const CallDaily = (props) => {
-  // const [toggle, setToggle] = useState(false);
-  // const [visile, setVisible] = useState(5);
-
-  // const handleToggle = () => {
-  //   setToggle((prevTog) => !prevTog);
-  //   console.log(toggle);
-  // };
-  // const showMoreCall = () => {
-  //   setVisible((prevValue) => prevValue + 5);
-  // };
+  const screenType = useScreenType({
+    mobile: 768,
+    tablet: 769,
+    desktop: 1000,
+    largeDesktop: 1600,
+  });
+  const callShow = screenType.isMobile ? 2 : 5;
 
   return (
     <>
@@ -19,7 +19,7 @@ const CallDaily = (props) => {
         if (item?.id === props.items) {
           return item.callList?.map((time, index) => {
             return (
-              <div className="card" key={time.id}>
+              <div className="card daily" key={time.id}>
                 <div className="card-body">
                   <div className="border-right border-white">
                     <h5 className="time-slot">
@@ -29,23 +29,23 @@ const CallDaily = (props) => {
                   </div>
                   <div className="call-card-block ">
                     <div className="call-list">
-                      {time.calls.slice(0, 5).map((tempCall) => {
+                      {time.calls.slice(0, callShow).map((tempCall) => {
                         return (
-                          <div className="call-card" key={tempCall.id}>
+                          <Link to="/" className="call-card" key={tempCall.id}>
                             <div className="text">{tempCall.title}</div>
 
                             <div className="info">
                               <span className="qno">{tempCall.quater}</span>
                               <span className="qyear">{tempCall.year}</span>
                             </div>
-                          </div>
+                          </Link>
                         );
                       })}
                     </div>
-                    {time.calls && time.calls.length > 5 ? (
+                    {time.calls && time.calls.length > callShow ? (
                       <div className="collapse" id={`collapseExample${index}`}>
                         <div className="call-list">
-                          {time.calls.slice(5).map((item, index1) => {
+                          {time.calls.slice(callShow).map((item, index1) => {
                             return (
                               <div className="call-card" key={index1}>
                                 <div className="text">{item.title}</div>​
@@ -62,7 +62,7 @@ const CallDaily = (props) => {
                       ""
                     )}
                   </div>
-                  {time.calls.length > 5 && (
+                  {time.calls.length > callShow && (
                     <div className="more-call">
                       <button
                         className="btn py-2 px-1 without-focus"

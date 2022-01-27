@@ -1,6 +1,6 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
-import "./App.scss";
+import "./style/App.scss";
 import NavBar from "./layout/NavBar";
 import Hero from "./layout/Hero";
 import { Route, Routes } from "react-router-dom";

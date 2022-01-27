@@ -1,8 +1,8 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import CallWeekly from "../Component/CallWeekly";
 //import WeeklySilder from "../Component/WeeklySilder";
 import Slider from "../layout/Slider";
-import data from "../data"
+import data from "../data";
 
 const data1 = [
   {
@@ -162,7 +162,7 @@ const data1 = [
 ];
 
 const WeeklyCalender = () => {
-  const [item, setItem] = useState();
+  const [item,setItem] = useState();
 
   const filterCall = (id) => {
     setItem(id);
@@ -176,11 +176,13 @@ const WeeklyCalender = () => {
       <Slider
         data={data}
         slidesPerGroup={7}
-        slidesPerView={7}
+        slidesPerViewM={7}
+        slidesPerViews={7}
         daily="weekly-swipe"
         daily1=""
         daily2=""
         filterCall={filterCall}
+        item={item}
       />
       <CallWeekly />
     </div>

@@ -18,7 +18,8 @@ const DailyCalender = () => {
     <>
       <Slider
         data={data}
-        slidesPerView={7}
+        slidesPerViewM={1}
+        slidesPerViews={7}
         slidesPerGroup={1}
         daily="date-swipe"
         daily1=""
