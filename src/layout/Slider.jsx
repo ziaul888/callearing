@@ -8,7 +8,6 @@ SwiperCore.use([Navigation, A11y, Pagination]);
 
 function Silder(props) {
   const getCurrentItem = (index) => {
-    //localStorage.setItem("currentIndex",props.data[index].id);
     props.filterCall(props.data[index].id);
   };
 

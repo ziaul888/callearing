@@ -12,11 +12,7 @@ const DailyCalender = () => {
     setItem(id);
   };
   useEffect(() => {
-    //console.log(localStorage.getItem("currentIndex"));
-
-    if (window.innerWidth <= 768) {
-      filterCall(1);
-    }
+   
     window.scrollTo({ top: 0 });
   }, []);
   return (

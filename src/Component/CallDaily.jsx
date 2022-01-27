@@ -1,5 +1,5 @@
 /* eslint-disable array-callback-return */
-import React from "react";
+import React,{ useEffect} from "react";
 import data from "../data";
 import useScreenType from "react-screentype-hook";
 
@@ -14,7 +14,14 @@ const CallDaily = (props) => {
   });
   
   const callShow = screenType.isMobile ? 2 : 5;
+  useEffect(() => {
+    //console.log(localStorage.getItem("currentIndex"));
 
+    if (window.innerWidth <= 768) {
+      props.filterCall(1);
+    }
+   
+  }, []);
   return (
     <>
       {data.map((item) => {
