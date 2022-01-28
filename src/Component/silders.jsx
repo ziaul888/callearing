@@ -8,7 +8,9 @@ SwiperCore.use([Navigation, A11y, Pagination]);
 
 function Silder(props) {
   const getCurrentItem = (index) => {
+    console.log(props.data[index].id);
     props.filterCall(props.data[index].id);
+  
   };
 
   return (
@@ -35,15 +37,13 @@ function Silder(props) {
         className={`swiper ${props.daily}`}
         slidesPerView={props.slidesPerViewM}
         slideToClickedSlide={true}
-        centeredSlides={true}
-        centeredSlidesBounds={true}
-        slidesPerGroup={props.slidesPerGroup}
         onSlideChange={(item) => getCurrentItem(item.activeIndex)}
-        initialSlide={props.initialSlides}
         breakpoints={{
           768: {
             slidesPerView: props.slidesPerViews,
-            initialSlide: props.initialSlides,
+            slidesPerGroup: props.slidesPerGroup,
+            centeredSlides: true,
+            centeredSlidesBounds: true,
           },
         }}
         navigation={{

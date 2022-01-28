@@ -26,6 +26,7 @@ const WeeklyCalender = () => {
         daily2=""
         filterCall={filterCall}
         item={item}
+       
       />
       <CallWeekly />
     </div>
