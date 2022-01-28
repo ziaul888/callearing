@@ -59,7 +59,7 @@ const CallWeeklyMo = () => {
               <div className="call-card-body card-body">
                 <div className="call-card-block">
                   <div className="call-list">
-                    <a href="" className="call-card">
+                    <a href="/" className="call-card">
                       <div className="text">
                         lululemon athletica inc.
                       </div>
@@ -70,7 +70,7 @@ const CallWeeklyMo = () => {
                       </div>
                     </a>
 
-                    <a href="" className="call-card">
+                    <a href="/" className="call-card">
                       <div className="text">
                         lululemon athletica inc.
                       </div>
@@ -138,7 +138,7 @@ const CallWeeklyMo = () => {
               <div className="call-card-body card-body">
                 <div className="call-card-block">
                   <div className="call-list">
-                    <a href="" className="call-card">
+                    <a href="/" className="call-card">
                       <div className="text">
                         lululemon athletica inc.
                       </div>
@@ -149,7 +149,7 @@ const CallWeeklyMo = () => {
                       </div>
                     </a>
 
-                    <a href="" className="call-card">
+                    <a href="/" className="call-card">
                       <div className="text">
                         lululemon athletica inc.
                       </div>
@@ -163,7 +163,7 @@ const CallWeeklyMo = () => {
 
                   <div className="collapse" id="collapse14_00_one">
                     <div className="call-list">
-                      <a href="" className="call-card">
+                      <a href="/" className="call-card">
                         <div className="text">
                           lululemon athletica inc.
                         </div>
@@ -174,7 +174,7 @@ const CallWeeklyMo = () => {
                         </div>
                       </a>
 
-                      <a href="" className="call-card">
+                      <a href="/" className="call-card">
                         <div className="text">
                           lululemon athletica inc.
                         </div>
@@ -185,7 +185,7 @@ const CallWeeklyMo = () => {
                         </div>
                       </a>
 
-                      <a href="" className="call-card">
+                      <a href="/" className="call-card">
                         <div className="text">
                           lululemon athletica inc.
                         </div>
@@ -196,7 +196,7 @@ const CallWeeklyMo = () => {
                         </div>
                       </a>
 
-                      <a href="" className="call-card">
+                      <a href="/" className="call-card">
                         <div className="text">
                           lululemon athletica inc.
                         </div>
@@ -260,7 +260,7 @@ const CallWeeklyMo = () => {
               <div className="call-card-body card-body">
                 <div className="call-card-block">
                   <div className="call-list">
-                    <a href="" className="call-card">
+                    <a href="/" className="call-card">
                       <div className="text">
                         lululemon athletica inc.
                       </div>
@@ -271,7 +271,7 @@ const CallWeeklyMo = () => {
                       </div>
                     </a>
 
-                    <a href="" className="call-card">
+                    <a href="/" className="call-card">
                       <div className="text">
                         lululemon athletica inc.
                       </div>
@@ -330,7 +330,7 @@ const CallWeeklyMo = () => {
               <div className="call-card-body card-body">
                 <div className="call-card-block">
                   <div className="call-list">
-                    <a href="" className="call-card">
+                    <a href="/" className="call-card">
                       <div className="text">
                         lululemon athletica inc.
                       </div>
@@ -341,7 +341,7 @@ const CallWeeklyMo = () => {
                       </div>
                     </a>
 
-                    <a href="" className="call-card">
+                    <a href="/" className="call-card">
                       <div className="text">
                         lululemon athletica inc.
                       </div>
@@ -355,7 +355,7 @@ const CallWeeklyMo = () => {
 
                   <div className="collapse" id="collapse20_00_one">
                     <div className="call-list">
-                      <a href="" className="call-card">
+                      <a href="/" className="call-card">
                         <div className="text">
                           lululemon athletica inc.
                         </div>
@@ -366,7 +366,7 @@ const CallWeeklyMo = () => {
                         </div>
                       </a>
 
-                      <a href="" className="call-card">
+                      <a href="/" className="call-card">
                         <div className="text">
                           lululemon athletica inc.
                         </div>
@@ -377,7 +377,7 @@ const CallWeeklyMo = () => {
                         </div>
                       </a>
 
-                      <a href="" className="call-card">
+                      <a href="/" className="call-card">
                         <div className="text">
                           lululemon athletica inc.
                         </div>
