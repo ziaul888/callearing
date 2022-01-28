@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Sliders from "../Component/Sliders";
+//import Sliders from "../Component/Sliders";
 import Slider from "../layout/Slider";
-
 import CallDaily from "../Component/CallDaily";
 import data from "../data";
 
