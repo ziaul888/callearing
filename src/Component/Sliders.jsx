@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, A11y, Pagination } from "swiper";
 import "swiper/css/navigation";
@@ -7,10 +7,12 @@ import "swiper/css";
 SwiperCore.use([Navigation, A11y, Pagination]);
 
 function Silder(props) {
+  const [temp, setTemp] = useState(0);
   const getCurrentItem = (index) => {
-    console.log(props.data[index].id);
+    setTemp(props.data[index].id);
     props.filterCall(props.data[index].id);
-  
+    
+     console.log(props.data[index].id);
   };
 
   return (
@@ -34,18 +36,14 @@ function Silder(props) {
         </svg>
       </div>
       <Swiper
-        className={`swiper ${props.daily}`}
-        slidesPerView={props.slidesPerViewM}
+        className="date-swipe"
+        slidesPerView={1}
         slideToClickedSlide={true}
+        // centeredSlides={true}
+        // centeredSlidesBounds={true}
+        slidesPerGroup={1}
         onSlideChange={(item) => getCurrentItem(item.activeIndex)}
-        breakpoints={{
-          768: {
-            slidesPerView: props.slidesPerViews,
-            slidesPerGroup: props.slidesPerGroup,
-            centeredSlides: true,
-            centeredSlidesBounds: true,
-          },
-        }}
+        initialSlide={temp}
         navigation={{
           nextEl: ".swipe-next",
           prevEl: ".swipe-prev",

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import Sliders from "../Component/Sliders";
 import Slider from "../layout/Slider";
 
 import CallDaily from "../Component/CallDaily";
@@ -7,16 +7,19 @@ import data from "../data";
 
 const DailyCalender = () => {
   const [item, setItem] = useState();
-
+ 
   const filterCall = (id) => {
     setItem(id);
   };
+
   useEffect(() => {
-   
     window.scrollTo({ top: 0 });
   }, []);
+ 
+  console.log(item);
   return (
     <>
+      {/* <Sliders filterCall={filterCall} items={item} data={data} /> */}
       <Slider
         data={data}
         slidesPerViewM={1}
@@ -27,7 +30,7 @@ const DailyCalender = () => {
         daily2=""
         filterCall={filterCall}
         items={item}
-        initialSlides={3}
+         initialSlides={3}
       />
       <CallDaily items={item} filterCall={filterCall} />
     </>

@@ -1,11 +1,16 @@
 /* eslint-disable array-callback-return */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import data from "../data";
 import useScreenType from "react-screentype-hook";
 
 import { Link } from "react-router-dom";
 
 const CallDaily = (props) => {
+  const [tempData, setTempdata] = useState([]);
+
+  useEffect(() => {
+    setTempdata(data);
+  }, []);
   const screenType = useScreenType({
     mobile: 768,
     tablet: 769,
@@ -14,10 +19,10 @@ const CallDaily = (props) => {
   });
 
   const callShow = screenType.isMobile ? 2 : 5;
-  
+  //console.log(tempData[0]);
   return (
     <>
-      {data.map((item) => {
+      {tempData.map((item) => {
         if (item?.id === props.items) {
           return item.callList?.map((time, index) => {
             return (

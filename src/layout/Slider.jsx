@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, A11y, Pagination } from "swiper";
 import "swiper/css/navigation";
@@ -7,10 +7,13 @@ import "swiper/css";
 SwiperCore.use([Navigation, A11y, Pagination]);
 
 function Silder(props) {
+  const [temp, setTemp] = useState(0);
   const getCurrentItem = (index) => {
     props.filterCall(props.data[index].id);
+    setTemp(props.data[index].id);
   };
 
+  console.log(temp);
   return (
     <div className="navigation-block justify-content-center">
       <div className="swipe-prev">
@@ -38,12 +41,11 @@ function Silder(props) {
         centeredSlides={true}
         centeredSlidesBounds={true}
         slidesPerGroup={props.slidesPerGroup}
-        onSlideChange={(item) => getCurrentItem(item.activeIndex)}
+        onSlideChange={(item) => getCurrentItem(item.realIndex)}
         initialSlide={props.initialSlides}
         breakpoints={{
           768: {
             slidesPerView: props.slidesPerViews,
-            initialSlide: props.initialSlides,
           },
         }}
         navigation={{
