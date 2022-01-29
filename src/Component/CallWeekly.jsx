@@ -27,7 +27,7 @@ const CallWeekly = () => {
               </div>
               <div className="day-block"></div>
               <div className="day-block">
-                <span className="lbl">5 Calls</span>
+                <span className="lbl">3 Calls</span>
 
                 <span>
                   <button
@@ -46,7 +46,7 @@ const CallWeekly = () => {
               <div className="day-block"></div>
               <div className="day-block"></div>
               <div className="day-block">
-                <span className="lbl">5 Calls</span>
+                <span className="lbl">2 Calls</span>
 
                 <span>
                   <button
@@ -122,7 +122,7 @@ const CallWeekly = () => {
           <div className="card-body">
             <div className="call-card-block">
               <div className="day-block">
-                <span className="lbl">5 Calls</span>
+                <span className="lbl">4 Calls</span>
 
                 <span>
                   <button
@@ -140,7 +140,7 @@ const CallWeekly = () => {
               <div className="day-block"></div>
               <div className="day-block"></div>
               <div className="day-block">
-                <span className="lbl">5 Calls</span>
+                <span className="lbl">6 Calls</span>
 
                 <span>
                   <button
@@ -226,7 +226,7 @@ const CallWeekly = () => {
             <div className="call-card-block">
               <div className="day-block"></div>
               <div className="day-block">
-                <span className="lbl">5 Calls</span>
+                <span className="lbl">8 Calls</span>
 
                 <span>
                   <button
@@ -244,7 +244,7 @@ const CallWeekly = () => {
               <div className="day-block"></div>
               <div className="day-block"></div>
               <div className="day-block">
-                <span className="lbl">5 Calls</span>
+                <span className="lbl">3 Calls</span>
 
                 <span>
                   <button
@@ -324,7 +324,7 @@ const CallWeekly = () => {
               <div className="day-block"></div>
               <div className="day-block"></div>
               <div className="day-block">
-                <span className="lbl">5 Calls</span>
+                <span className="lbl">4 Calls</span>
 
                 <span>
                   <button
