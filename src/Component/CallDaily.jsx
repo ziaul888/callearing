@@ -31,7 +31,7 @@ const CallDaily = (props) => {
                   <div className="border-right border-white">
                     <h5 className="time-slot">
                       <span className="time">{time.hour}</span>{" "}
-                      <span className="count">{time.call} Calls</span>
+                      <span className="count">{time.calls.length} Calls</span>
                     </h5>
                   </div>
                   <div className="call-card-block ">
