@@ -18,7 +18,7 @@ const CallDaily = (props) => {
     largeDesktop: 1600,
   });
 
-  const callShow = screenType.isMobile ? 2 : 5;
+  const callShow = screenType.isMobile ? 3 : 5;
   //console.log(tempData[0]);
   return (
     <>

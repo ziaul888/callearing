@@ -252,13 +252,12 @@
     }
 
     .call-card {
-      display: block;
+      display: flex;
+      flex-direction: column;
       background: $primary 0% 0% no-repeat padding-box;
       box-shadow: 0px 0px 6px #0000003d;
       border-radius: 5px;
       padding: 9px 8px;
-      display: flex;
-      flex-direction: column;
 
       .text {
         text-align: left;
@@ -266,6 +265,12 @@
         font-weight: 500;
         color: $black;
         margin-bottom: 13px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        max-height: 42px;
+        text-overflow: ellipsis;
       }
 
       .info {
@@ -645,6 +650,25 @@
           height: 12px;
         }
       }
+
+      .monthly-swipe {
+        .month-block {
+          padding: 9px 6px;
+
+          .month {
+            font-size: 14px;
+          }
+
+          .t-call {
+            width: 100%;
+            min-width: auto;
+            max-width: 75px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 12px;
+          }
+        }
+      }
     }
 
     .card {
@@ -693,7 +717,7 @@
       .call-list {
         row-gap: 9px;
         column-gap: 7px;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
 
       .call-card {
@@ -702,6 +726,14 @@
 
         .text {
           font-size: 12px;
+          line-height: 1.35;
+          margin-bottom: 5px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          max-height: 49px;
+          text-overflow: ellipsis;
         }
 
         .info {
@@ -761,10 +793,6 @@
           padding: 0;
         }
 
-        .call-card-block {
-          grid-template-columns: repeat(7, 14.285%);
-        }
-
         .day-block {
           padding: 9px 7px;
           .lbl {
@@ -779,10 +807,6 @@
           }
         }
 
-        .call-list {
-          grid-template-columns: repeat(2, 1fr);
-        }
-
         .call-card-body {
           grid-template-columns: 1fr 20px;
           padding: 0 8px 0 6px;
@@ -792,6 +816,42 @@
             padding: 3px 0;
             grid-template-columns: 1fr;
           }
+        }
+      }
+
+      &.weekly-mobile,
+      &.month-week {
+        .call-card-block {
+          grid-template-columns: repeat(7, 14.285%);
+        }
+      }
+
+      &.month-week {
+        .day-block {
+          gap: 10px;
+
+          .date {
+            font-size: 14px;
+          }
+          .day-call {
+            .btn {
+              font-size: 11px;
+              text-align: left;
+              line-height: 1.25;
+            }
+          }
+        }
+      }
+
+      .popup-call-list {
+        padding: 0;
+
+        .daily {
+          margin-bottom: 8px;
+        }
+
+        .call-list {
+          grid-template-columns: repeat(3, 1fr);
         }
       }
     }
@@ -849,6 +909,14 @@
           margin-left: auto;
           margin-right: auto;
           font-size: 12px;
+        }
+      }
+    }
+
+    .card {
+      &.month-week {
+        .day-block {
+          padding: 6px 3px;
         }
       }
     }

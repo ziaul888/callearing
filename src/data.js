@@ -255,27 +255,27 @@ const data = [
         call: 5,
         calls: [
           {
-            title: "Lorem ipsum dolor sit amet consectetur",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q3",
             year: 2020,
           },
           {
-            title: "Lorem amet adipisicing elit",
+            title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
             quater: "Q4",
             year: 2020,
           },
           {
-            title: "Lorem ipsum dolor sit amet consectetur",
+            title: "Maiores expedita impedit, modi blanditiis dolorum. ",
             quater: "Q3",
             year: 2020,
           },
           {
-            title: "Lorem amet adipisicing elit",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q4",
             year: 2020,
           },
           {
-            title: "Lorem amet adipisicing elit",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q4",
             year: 2020,
           },
@@ -311,22 +311,22 @@ const data = [
         hour: "9.00",
         calls: [
           {
-            title: "Lorem ipsum dolor sit amet consectetur",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q3",
             year: 2020,
           },
           {
-            title: "Lorem amet adipisicing elit",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q4",
             year: 2020,
           },
           {
-            title: "Lorem ipsum dolor sit amet consectetur",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q3",
             year: 2020,
           },
           {
-            title: "Lorem amet adipisicing elit",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q4",
             year: 2020,
           },
@@ -351,7 +351,7 @@ const data = [
             year: 2020,
           },
           {
-            title: "Lorem amet adipisicing elit",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q4",
             year: 2020,
           },
@@ -371,7 +371,7 @@ const data = [
             year: 2020,
           },
           {
-            title: "Lorem ipsum dolor sit amet consectetur",
+            title: " Ullam vero, alias quos, pariatur culpa repellendus sit esse saepe porro cum quasi.",
             quater: "Q3",
             year: 2020,
           },
