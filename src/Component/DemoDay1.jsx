@@ -1,6 +1,14 @@
 import React from "react";
+import useScreenType from "react-screentype-hook";
 
 const DemoDay1 = () => {
+  const screenType = useScreenType({
+    mobile: 768,
+    tablet: 769,
+    desktop: 1000,
+    largeDesktop: 1600,
+  });
+
   return (
     <div>
       <div id="one">
@@ -41,15 +49,6 @@ const DemoDay1 = () => {
                       <span className="qyear">2020</span>
                     </div>
                   </div>
-
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -143,43 +142,74 @@ const DemoDay1 = () => {
                 </h5>
               </div>
               <div className="call-card-block">
-                <div className="call-list">
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
+                {!screenType.isMobile ? (
+                  <div className="call-list">
+                    <div className="call-card">
+                      <div className="text">lululemon athletica inc.</div>
 
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
+                      <div className="info">
+                        <span className="qno">Q3</span>
+                        <span className="qyear">2020</span>
+                      </div>
+                    </div>
+
+                    <div className="call-card">
+                      <div className="text">lululemon athletica inc.</div>
+
+                      <div className="info">
+                        <span className="qno">Q3</span>
+                        <span className="qyear">2020</span>
+                      </div>
+                    </div>
+
+                    <div className="call-card">
+                      <div className="text">lululemon athletica inc.</div>
+
+                      <div className="info">
+                        <span className="qno">Q3</span>
+                        <span className="qyear">2020</span>
+                      </div>
+                    </div>
+
+                    <div className="call-card">
+                      <div className="text">lululemon athletica inc.</div>
+
+                      <div className="info">
+                        <span className="qno">Q3</span>
+                        <span className="qyear">2020</span>
+                      </div>
                     </div>
                   </div>
+                ) : (
+                  <div className="call-list">
+                    <div className="call-card">
+                      <div className="text">lululemon athletica inc.</div>
 
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
+                      <div className="info">
+                        <span className="qno">Q3</span>
+                        <span className="qyear">2020</span>
+                      </div>
+                    </div>
 
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
+                    <div className="call-card">
+                      <div className="text">lululemon athletica inc.</div>
+
+                      <div className="info">
+                        <span className="qno">Q3</span>
+                        <span className="qyear">2020</span>
+                      </div>
+                    </div>
+
+                    <div className="call-card">
+                      <div className="text">lululemon athletica inc.</div>
+
+                      <div className="info">
+                        <span className="qno">Q3</span>
+                        <span className="qyear">2020</span>
+                      </div>
                     </div>
                   </div>
-
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
-                    </div>
-                  </div>
-
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
-                    </div>
-                  </div>
-                </div>
+                )}
 
                 <div className="collapse" id="collapsePopUp">
                   <div className="call-list">
