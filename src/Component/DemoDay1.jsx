@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import useScreenType from "react-screentype-hook";
 
 const DemoDay1 = () => {
@@ -8,12 +8,124 @@ const DemoDay1 = () => {
     desktop: 1000,
     largeDesktop: 1600,
   });
-
+  const [closeButton, setCloseButton] = useState(true);
+  // const handleClose = () => {
+  //   setCloseButton(false);
+  // };
   return (
-    <div>
-      <div id="one">
+    <>
+      <div
+        style={{ display: closeButton ? "initial" : "none" }}
+        className="d-block tippy-popup"
+      >
+        <button
+          type="button"
+          className="close-btn btn d-md-none without-focus"
+          onClick={() => setCloseButton(false)}
+        >
+          &times;
+        </button>
         <div className="popup-call-list">
-          <div className="card">
+          <div className="card daily">
+            <div className="card-body">
+              <div className="border-right border-white">
+                <h5 className="time-slot">
+                  <span className="time">8:00</span>{" "}
+                  <span className="count">4 Calls</span>
+                </h5>
+              </div>
+              <div className="call-card-block">
+                <div className="call-list">
+                  <div className="call-card">
+                    <div className="text">
+                      {" "}
+                      Lorem ipsum dolor sit, amet consectetur adipisicing..
+                    </div>
+
+                    <div className="info">
+                      <span className="qno">Q3</span>
+                      <span className="qyear">2020</span>
+                    </div>
+                  </div>
+
+                  <div className="call-card">
+                    <div className="text">
+                      Lorem laudantium quibusdam distinctio deserunt temporibus.
+                    </div>
+
+                    <div className="info">
+                      <span className="qno">Q3</span>
+                      <span className="qyear">2020</span>
+                    </div>
+                  </div>
+
+                  <div className="call-card">
+                    <div className="text">
+                      Lorem, ipsum provident exercitationem labore obcaecati
+                      animi!
+                    </div>
+
+                    <div className="info">
+                      <span className="qno">Q3</span>
+                      <span className="qyear">2020</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="more-call"></div>
+            </div>
+          </div>
+
+          <div className="card daily">
+            <div className="card-body">
+              <div className="border-right border-white">
+                <h5 className="time-slot">
+                  <span className="time">8:00</span>{" "}
+                  <span className="count">4 Calls</span>
+                </h5>
+              </div>
+              <div className="call-card-block">
+                <div className="call-list">
+                  <div className="call-card">
+                    <div className="text">
+                      Lorem adipisicing blanditiis possimus quia iste nisi
+                      voluptate delectus..
+                    </div>
+
+                    <div className="info">
+                      <span className="qno">Q3</span>
+                      <span className="qyear">2020</span>
+                    </div>
+                  </div>
+
+                  <div className="call-card">
+                    <div className="text">lululemon athletica inc.</div>
+
+                    <div className="info">
+                      <span className="qno">Q3</span>
+                      <span className="qyear">2020</span>
+                    </div>
+                  </div>
+
+                  <div className="call-card">
+                    <div className="text">
+                      Lorem laudantium quibusdam distinctio deserunt temporibus.
+                    </div>
+
+                    <div className="info">
+                      <span className="qno">Q3</span>
+                      <span className="qyear">2020</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="more-call"></div>
+            </div>
+          </div>
+
+          <div className="card daily">
             <div className="card-body">
               <div className="border-right border-white">
                 <h5 className="time-slot">
@@ -33,16 +145,9 @@ const DemoDay1 = () => {
                   </div>
 
                   <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
+                    <div className="text">
+                      Lorem laudantium quibusdam distinctio deserunt temporibus.
                     </div>
-                  </div>
-
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
 
                     <div className="info">
                       <span className="qno">Q3</span>
@@ -56,84 +161,7 @@ const DemoDay1 = () => {
             </div>
           </div>
 
-          <div className="card">
-            <div className="card-body">
-              <div className="border-right border-white">
-                <h5 className="time-slot">
-                  <span className="time">8:00</span>{" "}
-                  <span className="count">4 Calls</span>
-                </h5>
-              </div>
-              <div className="call-card-block">
-                <div className="call-list">
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
-                    </div>
-                  </div>
-
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
-                    </div>
-                  </div>
-
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="more-call"></div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-body">
-              <div className="border-right border-white">
-                <h5 className="time-slot">
-                  <span className="time">8:00</span>{" "}
-                  <span className="count">4 Calls</span>
-                </h5>
-              </div>
-              <div className="call-card-block">
-                <div className="call-list">
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
-                    </div>
-                  </div>
-
-                  <div className="call-card">
-                    <div className="text">lululemon athletica inc.</div>
-
-                    <div className="info">
-                      <span className="qno">Q3</span>
-                      <span className="qyear">2020</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="more-call"></div>
-            </div>
-          </div>
-
-          <div className="card">
+          <div className="card daily">
             <div className="card-body">
               <div className="border-right border-white">
                 <h5 className="time-slot">
@@ -145,7 +173,10 @@ const DemoDay1 = () => {
                 {!screenType.isMobile ? (
                   <div className="call-list">
                     <div className="call-card">
-                      <div className="text">lululemon athletica inc.</div>
+                      <div className="text">
+                        Lorem laudantium quibusdam distinctio deserunt
+                        temporibus.
+                      </div>
 
                       <div className="info">
                         <span className="qno">Q3</span>
@@ -283,7 +314,7 @@ const DemoDay1 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
