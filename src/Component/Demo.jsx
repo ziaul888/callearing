@@ -1,22 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Demo = () => {
-  // const handleClick=(e)=> {
-  //   e.preventDefault();
-  //   console.log('The link was clicked.');
-  // }
+  
   // const [closeButton, setCloseButton] = useState(true);
   // const handleClose = () => {
   //   setCloseButton(false);
   // };
+  
   return (
     <div id="two">
-      <div className="d-block tippy-popup" >
+      <div className="d-block tippy-popup">
         <button
           type="button"
           className="close-btn btn d-md-none without-focus"
-          // onClick={handleClose}
+         
         >
           &times;
         </button>

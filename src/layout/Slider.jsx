@@ -63,7 +63,7 @@ function Silder(props) {
                   // onClick={() => props.filterCall(slide.id)}
                 >
                   <div className={`date ${props.daily2}`}>
-                    {slide.date} {slide.month} <span>{slide.weekDay}</span>
+                    {slide.month} {slide.date} <span>{slide.weekDay}</span>
                   </div>
 
                   <div className="t-call">{slide.totalcall} calls</div>
