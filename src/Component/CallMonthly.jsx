@@ -1,18 +1,34 @@
-import React, { useState } from "react";
+import React from "react";
 import Tippy from "@tippyjs/react";
-import { Tooltip } from "react-tippy";
 import "tippy.js/themes/light.css";
 import "tippy.js/dist/tippy.css";
-import { Link } from "react-router-dom";
-import Demo from "./Demo";
 import DemoDay1 from "./DemoDay1";
 
 const CallMonthly = () => {
-  const [open, setIsOpen] = useState(true);
-  // const handleTip = () => {
-  //   setOpen(false);
-  // };
-  console.log(open);
+  const closeOnClick = {
+    name: "closeOnClick",
+    defaultValue: true,
+    fn(instance) {
+      return {
+        onShow() {
+          instance.popper
+            .querySelector(".close-btn")
+            .addEventListener("click", () => {
+              instance.hide();
+            });
+        },
+
+        onHide() {
+          instance.popper
+            .querySelector(".close-btn")
+            .removeEventListener("click", () => {
+              instance.hide();
+            });
+        },
+      };
+    },
+  };
+
   return (
     <>
       <div className="week-day-block">
@@ -67,6 +83,8 @@ const CallMonthly = () => {
                           },
                         ],
                       }}
+                      closeOnClick={true}
+                      plugins={[closeOnClick]}
                     >
                       <button
                         className="btn tippy-btn without-focus"
@@ -97,6 +115,8 @@ const CallMonthly = () => {
                         },
                       ],
                     }}
+                    closeOnClick={true}
+                    plugins={[closeOnClick]}
                   >
                     <button
                       className="btn tippy-btn without-focus"
@@ -222,6 +242,8 @@ const CallMonthly = () => {
                           },
                         ],
                       }}
+                      closeOnClick={true}
+                      plugins={[closeOnClick]}
                     >
                       <button
                         className="btn tippy-btn without-focus"
@@ -253,6 +275,8 @@ const CallMonthly = () => {
                         },
                       ],
                     }}
+                    closeOnClick={true}
+                    plugins={[closeOnClick]}
                   >
                     <button
                       class="btn tippy-btn without-focus"
@@ -341,6 +365,8 @@ const CallMonthly = () => {
                       content={<DemoDay1 />}
                       placement="top"
                       theme="light"
+                      closeOnClick={true}
+                      plugins={[closeOnClick]}
                       // popperOptions={{
                       //   modifiers: [
                       //     {
@@ -370,6 +396,8 @@ const CallMonthly = () => {
                     content={<DemoDay1 />}
                     placement="top"
                     theme="light"
+                    closeOnClick={true}
+                    plugins={[closeOnClick]}
                     // popperOptions={{
                     //   modifiers: [
                     //     {
@@ -418,178 +446,13 @@ const CallMonthly = () => {
                   <span className="lbl">78 Calls</span>
 
                   <span>
-                    <Tooltip
+                    <Tippy
                       arrow={true}
                       trigger="click"
                       allowHTML={true}
                       interactive={true}
                       maxWidth={1010}
-                      open={open}
-                      onHide={() => {
-                        console.log("call");
-                        setIsOpen(false);
-                      }}
-                      html={
-                        <div className="d-block tippy-popup">
-                          <button
-                            type="button"
-                            className="close-btn btn d-md-none without-focus"
-                            onClick={() => {
-                              setIsOpen(true);
-                            }}
-                          >
-                            &times;
-                          </button>
-                          <div className="popup-call-list">
-                            <div className="card daily">
-                              <div className="card-body">
-                                <div className="border-right border-white">
-                                  <h5 className="time-slot">
-                                    <span className="time">8:00</span>
-                                    <span className="count">4 Calls</span>
-                                  </h5>
-                                </div>
-                                <div className="call-card-block">
-                                  <div className="call-list">
-                                    <Link to="/" class="call-card">
-                                      <div class="text">
-                                        Lorem ipsum dolor sit, amet consectetur
-                                        adipisicing.
-                                      </div>
-
-                                      <div class="info">
-                                        <span class="qno">Q3</span>
-                                        <span class="qyear">2020</span>
-                                      </div>
-                                    </Link>
-
-                                    <div className="call-card">
-                                      <div className="text">
-                                        lululemon athletica inc.
-                                      </div>
-
-                                      <div className="info">
-                                        <span className="qno">Q3</span>
-                                        <span className="qyear">2020</span>
-                                      </div>
-                                    </div>
-
-                                    <div className="call-card">
-                                      <div className="text">
-                                        Lorem, ipsum provident exercitationem
-                                        labore obcaecati animi!.
-                                      </div>
-
-                                      <div className="info">
-                                        <span className="qno">Q3</span>
-                                        <span className="qyear">2020</span>
-                                      </div>
-                                    </div>
-
-                                    {/* <div className="call-card">
-                                  <div className="text">lululemon athletica inc.</div>
-                
-                                  <div className="info">
-                                    <span className="qno">Q3</span>
-                                    <span className="qyear">2020</span>
-                                  </div>
-                                </div> */}
-                                  </div>
-                                </div>
-
-                                <div className="more-call"></div>
-                              </div>
-                            </div>
-
-                            <div className="card daily ">
-                              <div className="card-body">
-                                <div className="border-right border-white">
-                                  <h5 className="time-slot">
-                                    <span className="time">8:00</span>{" "}
-                                    <span className="count">4 Calls</span>
-                                  </h5>
-                                </div>
-                                <div className="call-card-block">
-                                  <div className="call-list">
-                                    <div className="call-card">
-                                      <div className="text">
-                                        lululemon athletica inc.
-                                      </div>
-
-                                      <div className="info">
-                                        <span className="qno">Q3</span>
-                                        <span className="qyear">2020</span>
-                                      </div>
-                                    </div>
-
-                                    <div className="call-card">
-                                      <div className="text">
-                                        lululemon athletica inc.
-                                      </div>
-
-                                      <div className="info">
-                                        <span className="qno">Q3</span>
-                                        <span className="qyear">2020</span>
-                                      </div>
-                                    </div>
-
-                                    <div className="call-card">
-                                      <div className="text">
-                                        lululemon athletica inc.
-                                      </div>
-
-                                      <div className="info">
-                                        <span className="qno">Q3</span>
-                                        <span className="qyear">2020</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div className="more-call"></div>
-                              </div>
-                            </div>
-
-                            <div className="card daily">
-                              <div className="card-body">
-                                <div className="border-right border-white">
-                                  <h5 className="time-slot">
-                                    <span className="time">8:00</span>{" "}
-                                    <span className="count">4 Calls</span>
-                                  </h5>
-                                </div>
-                                <div className="call-card-block">
-                                  <div className="call-list">
-                                    <div className="call-card">
-                                      <div className="text">
-                                        lululemon athletica inc.
-                                      </div>
-
-                                      <div className="info">
-                                        <span className="qno">Q3</span>
-                                        <span className="qyear">2020</span>
-                                      </div>
-                                    </div>
-
-                                    <div className="call-card">
-                                      <div className="text">
-                                        lululemon athletica inc.
-                                      </div>
-
-                                      <div className="info">
-                                        <span className="qno">Q3</span>
-                                        <span className="qyear">2020</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div className="more-call"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      }
+                      content={<DemoDay1 />}
                       placement="top"
                       theme="light"
                       popperOptions={{
@@ -602,15 +465,17 @@ const CallMonthly = () => {
                           },
                         ],
                       }}
+                      closeOnClick={true}
+                      plugins={[closeOnClick]}
                     >
                       <button
                         className="btn tippy-btn without-focus"
                         type="button"
-                        //data-template="two"
+                        data-template="two"
                       >
                         View
                       </button>
-                    </Tooltip>
+                    </Tippy>
                   </span>
                 </div>
                 <div class="day-call d-md-none">
@@ -620,7 +485,7 @@ const CallMonthly = () => {
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
-                    content={<Demo />}
+                    content={<DemoDay1 />}
                     placement="top"
                     theme="light"
                     popperOptions={{
@@ -633,6 +498,8 @@ const CallMonthly = () => {
                         },
                       ],
                     }}
+                    closeOnClick={true}
+                    plugins={[closeOnClick]}
                   >
                     <button
                       class="btn tippy-btn without-focus"

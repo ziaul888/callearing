@@ -15,7 +15,7 @@ const DailyCalender = () => {
     window.scrollTo({ top: 0 });
   }, []);
  
-  console.log(item);
+  
   return (
     <>
       {/* <Sliders filterCall={filterCall} items={item} data={data} /> */}

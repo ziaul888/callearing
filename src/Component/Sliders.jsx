@@ -11,8 +11,6 @@ function Silder(props) {
   const getCurrentItem = (index) => {
     setTemp(props.data[index].id);
     props.filterCall(props.data[index].id);
-    
-     console.log(props.data[index].id);
   };
 
   return (
