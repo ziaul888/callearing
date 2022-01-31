@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CallMonthly from "../Component/CallMonthly";
+import CallMonthly from "../Component/MonthlyCall/CallMonthly";
 import Slider from "../layout/Slider";
 
 const MonthlyCanlender = () => {
