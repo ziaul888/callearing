@@ -2,7 +2,7 @@ import React from "react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/themes/light.css";
 import "tippy.js/dist/tippy.css";
-import DemoDay1 from "./DemoDay1";
+import MonthlyAllCall from "./MonthlyAllCall";
 
 const CallMonthly = () => {
   const closeOnClick = {
@@ -68,7 +68,7 @@ const CallMonthly = () => {
                           >
                             &times;
                           </button>
-                          <DemoDay1 />
+                          <MonthlyAllCall />
                         </div>
                       }
                       placement="top"
@@ -102,7 +102,7 @@ const CallMonthly = () => {
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
-                    content={<DemoDay1 />}
+                    content={<MonthlyAllCall />}
                     placement="top"
                     theme="light"
                     popperOptions={{
@@ -133,64 +133,25 @@ const CallMonthly = () => {
                   <span className="lbl">15 Calls</span>
 
                   <span>
-                    {/* <Tippy
-                      arrow={true}
-                      trigger="click"
-                      allowHTML={true}
-                      interactive={true}
-                      maxWidth={1010}
-                      content={<Demo />}
-                      placement="top"
-                      theme="light"
-                      popperOptions={{
-                        modifiers: [
-                          {
-                            name: "flip",
-                            requires: true,
-                            options: {
-                              fallbackPlacements: ["top", "bottom"],
-                            },
-                          },
-                        ],
-                      }}
-                    > */}
+                
                     <button
                       className="btn tippy-btn without-focus"
                       //data-template="one"
                     >
                       View
                     </button>
-                    {/* </Tippy> */}
+                  
                   </span>
                 </div>
                 <div className="day-call d-md-none">
-                  {/* <Tippy
-                    arrow={true}
-                    trigger="click"
-                    allowHTML={true}
-                    interactive={true}
-                    maxWidth={1010}
-                    content={<DemoDay1 />}
-                    placement="top"
-                    theme="light"
-                    popperOptions={{
-                      modifiers: [
-                        {
-                          name: "flip",
-                          options: {
-                            fallbackPlacements: ["top", "bottom"],
-                          },
-                        },
-                      ],
-                    }}
-                  > */}
+                 
                   <button
                     className="btn tippy-btn without-focus"
-                    //data-template="one"
+                   
                   >
                     15 Calls
                   </button>
-                  {/* </Tippy> */}
+                 
                 </div>
               </div>
               <div className="day-block">
@@ -201,7 +162,7 @@ const CallMonthly = () => {
                   <span>
                     <button
                       className="btn tippy-btn without-focus"
-                      //data-template="two"
+                      
                     >
                       View
                     </button>
@@ -229,7 +190,7 @@ const CallMonthly = () => {
                       allowHTML={true}
                       interactive={true}
                       maxWidth={1010}
-                      content={<DemoDay1 />}
+                      content={<MonthlyAllCall/>}
                       placement="top"
                       theme="light"
                       popperOptions={{
@@ -262,7 +223,7 @@ const CallMonthly = () => {
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
-                    content={<DemoDay1 />}
+                    content={<MonthlyAllCall/>}
                     placement="top"
                     theme="light"
                     popperOptions={{
@@ -362,19 +323,12 @@ const CallMonthly = () => {
                       allowHTML={true}
                       interactive={true}
                       maxWidth={1010}
-                      content={<DemoDay1 />}
+                      content={<MonthlyAllCall />}
                       placement="top"
                       theme="light"
                       closeOnClick={true}
                       plugins={[closeOnClick]}
-                      // popperOptions={{
-                      //   modifiers: [
-                      //     {
-                      //       name :"requires",
-                      //       flip: true,
-                      //     },
-                      //   ],
-                      // }}
+                     
                     >
                       <button
                         className="btn tippy-btn without-focus"
@@ -393,19 +347,12 @@ const CallMonthly = () => {
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
-                    content={<DemoDay1 />}
+                    content={<MonthlyAllCall/>}
                     placement="top"
                     theme="light"
                     closeOnClick={true}
                     plugins={[closeOnClick]}
-                    // popperOptions={{
-                    //   modifiers: [
-                    //     {
-                    //       name :"requires",
-                    //       flip: true,
-                    //     },
-                    //   ],
-                    // }}
+                   
                   >
                     <button
                       class="btn tippy-btn without-focus"
@@ -452,7 +399,7 @@ const CallMonthly = () => {
                       allowHTML={true}
                       interactive={true}
                       maxWidth={1010}
-                      content={<DemoDay1 />}
+                      content={<MonthlyAllCall/>}
                       placement="top"
                       theme="light"
                       popperOptions={{
@@ -485,7 +432,7 @@ const CallMonthly = () => {
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
-                    content={<DemoDay1 />}
+                    content={<MonthlyAllCall/>}
                     placement="top"
                     theme="light"
                     popperOptions={{

@@ -281,7 +281,6 @@ const DemoDay1 = () => {
                 </div>
               </div>
             </div>
-
             <div className="more-call">
               <button
                 className="btn py-2 px-1 without-focus"

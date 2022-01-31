@@ -18,7 +18,7 @@ const DailyCalender = () => {
   
   return (
     <>
-      {/* <Sliders filterCall={filterCall} items={item} data={data} /> */}
+     
       <Slider
         data={data}
         slidesPerViewM={1}

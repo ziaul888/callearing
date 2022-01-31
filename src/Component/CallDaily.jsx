@@ -19,7 +19,6 @@ const CallDaily = (props) => {
   });
 
   const callShow = screenType.isMobile ? 3 : 5;
-  //console.log(tempData[0]);
   return (
     <>
       {tempData.map((item) => {

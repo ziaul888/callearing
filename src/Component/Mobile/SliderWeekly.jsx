@@ -66,35 +66,6 @@ const SliderWeekly = (props) => {
                   <div className="t-call">5 calls</div>
                 </div>
               </SwiperSlide>
-
-              {/* <div className="swiper-slide">
-              <div className="date-block">
-                <div className="date">18 Jan - 24 Jan</div>
-
-                <div className="t-call">7 calls</div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="date-block">
-                <div className="date">25 Jan - 31 Jan</div>
-
-                <div className="t-call">10 calls</div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="date-block">
-                <div className="date">01 Feb - 07 Feb</div>
-
-                <div className="t-call">15 calls</div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="date-block">
-                <div className="date">08 Feb - 14 Feb</div>
-
-                <div className="t-call">3 calls</div>
-              </div>
-            </div> */}
             </div>
           </Swiper>
         </div>
