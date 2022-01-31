@@ -2,7 +2,7 @@ import React from "react";
 import useScreenType from "react-screentype-hook";
 import { Link } from "react-router-dom";
 
-const DemoDay1 = () => {
+const MonthlyAllCall = () => {
   const screenType = useScreenType({
     mobile: 768,
     tablet: 769,
@@ -315,4 +315,4 @@ const DemoDay1 = () => {
   );
 };
 
-export default DemoDay1;
+export default MonthlyAllCall;

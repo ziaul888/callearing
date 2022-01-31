@@ -133,25 +133,18 @@ const CallMonthly = () => {
                   <span className="lbl">15 Calls</span>
 
                   <span>
-                
                     <button
                       className="btn tippy-btn without-focus"
                       //data-template="one"
                     >
                       View
                     </button>
-                  
                   </span>
                 </div>
                 <div className="day-call d-md-none">
-                 
-                  <button
-                    className="btn tippy-btn without-focus"
-                   
-                  >
+                  <button className="btn tippy-btn without-focus">
                     15 Calls
                   </button>
-                 
                 </div>
               </div>
               <div className="day-block">
@@ -160,10 +153,7 @@ const CallMonthly = () => {
                   <span className="lbl">6 Calls</span>
 
                   <span>
-                    <button
-                      className="btn tippy-btn without-focus"
-                      
-                    >
+                    <button className="btn tippy-btn without-focus">
                       View
                     </button>
                   </span>
@@ -190,7 +180,7 @@ const CallMonthly = () => {
                       allowHTML={true}
                       interactive={true}
                       maxWidth={1010}
-                      content={<MonthlyAllCall/>}
+                      content={<MonthlyAllCall />}
                       placement="top"
                       theme="light"
                       popperOptions={{
@@ -223,7 +213,7 @@ const CallMonthly = () => {
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
-                    content={<MonthlyAllCall/>}
+                    content={<MonthlyAllCall />}
                     placement="top"
                     theme="light"
                     popperOptions={{
@@ -328,7 +318,6 @@ const CallMonthly = () => {
                       theme="light"
                       closeOnClick={true}
                       plugins={[closeOnClick]}
-                     
                     >
                       <button
                         className="btn tippy-btn without-focus"
@@ -347,12 +336,11 @@ const CallMonthly = () => {
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
-                    content={<MonthlyAllCall/>}
+                    content={<MonthlyAllCall />}
                     placement="top"
                     theme="light"
                     closeOnClick={true}
                     plugins={[closeOnClick]}
-                   
                   >
                     <button
                       class="btn tippy-btn without-focus"
@@ -399,7 +387,7 @@ const CallMonthly = () => {
                       allowHTML={true}
                       interactive={true}
                       maxWidth={1010}
-                      content={<MonthlyAllCall/>}
+                      content={<MonthlyAllCall />}
                       placement="top"
                       theme="light"
                       popperOptions={{
@@ -432,7 +420,7 @@ const CallMonthly = () => {
                     allowHTML={true}
                     interactive={true}
                     maxWidth={1010}
-                    content={<MonthlyAllCall/>}
+                    content={<MonthlyAllCall />}
                     placement="top"
                     theme="light"
                     popperOptions={{

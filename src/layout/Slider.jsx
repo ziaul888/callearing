@@ -13,7 +13,6 @@ function Silder(props) {
    
   };
 
- 
   return (
     <div className="navigation-block justify-content-center">
       <div className="swipe-prev">
